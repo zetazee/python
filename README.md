@@ -1,5 +1,5 @@
 # python for biologists - notes
-this repository contains my personal notes from studying python for biologists by Martin Jones. The notes summarize my understanding of the book and practical coding exercises. 
+this repository contains my personal notes from studying _python for biologists_ by Martin Jones. The notes summarize my understanding of the book and practical coding exercises. 
 
 i modified or expanded the exercises to test my understanding and to push myself.
 
