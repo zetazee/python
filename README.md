@@ -7,7 +7,7 @@ these notes are meant to:
 - help me review my notes and track my progress.
 - serve as a resource for others learning python for biological data analysis.
 
-The notes cover the following topics:
+the notes cover the following topics:
 
     ✅ text manipulation
     ✅ reading files
