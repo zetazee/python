@@ -40,9 +40,76 @@ now we can delete all the information that we don't want manually, or we can use
 
 do whichever you feel most comfortable with for your first data preparations, but regex is super easy and fast, so i am using it here.
 
-press `ctrl + H` in vs code to access regex:
+> also you don't need to memorize any regex patterns. you can always search & ask ai.
+
+- press `ctrl + H` in vs code to access regex:
 
 ![codon amino acid](https://github.com/user-attachments/assets/3357ecef-243a-4390-937a-cf27b09f4202)
+
+- then type this on the first line and the latter to the second:
+
+```scss
+(\w{3}) (\w) (\w{3})
+```
+```scss
+$1,$2
+```
+
+![codon amino acid](https://github.com/user-attachments/assets/b95e5e6f-91ee-4920-8d94-dfb5633c9c87)
+
+- then replace them by pushing enter (or replace all).
+
+![codon amino acid](https://github.com/user-attachments/assets/9276fd15-11eb-4ec1-a23f-26694f1d58a3)
+
+- you can fix the rest manually.
+
+also, pay attention to the tiniest details, like how many spaces are where. they could cause big trouble later. make it as clean and smooth as possible.
+
+![codon amino acid](https://github.com/user-attachments/assets/d5a7d0e1-1507-46e4-aa1c-5370fab33c5a)
+
+- now line them in one row:
+
+```scss
+(\w{3}),(\w)
+```
+```scss
+$1,$2\n
+```
+![codon amino acid](https://github.com/user-attachments/assets/c572c5a2-9b40-4e01-a762-f3e5853e9ddf)
+
+
+- use `^` followed by six spaces, and for leave replace empty:
+
+```scss
+^
+```
+```scss
+
+```
+
+![codon amino acid](https://github.com/user-attachments/assets/045003c4-4a6e-4678-aede-505cd558d137)
+
+
+- fix the rest manually:
+
+![codon amino acid](https://github.com/user-attachments/assets/b87df334-3e86-4f77-bb9f-cb2cd6b10540)
+
+
+- delete the space between the lines (replace by nothing):
+
+```scss
+^\s*$\n
+```
+```scss
+
+```
+
+![codon amino acid](https://github.com/user-attachments/assets/c01cf38b-c201-4206-b662-721ce1da0367)
+
+
+
+
+
 
 
 
