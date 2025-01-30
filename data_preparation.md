@@ -1,4 +1,4 @@
-![3](https://github.com/user-attachments/assets/e24b4913-9a51-428f-ab65-b071b0a3c946)# why do we need to prepare our data?
+# why do we need to prepare our data?
 let's say that we want to write a program that mimics what trna does in real life. 
 we want our program to go through a dna sequence and read the sequence three letters by three letters, codon-based, and then translate each to its corresponding amino acid.
 
