@@ -4,6 +4,7 @@ we want our program to go through a dna sequence and read the sequence three let
 
 before even starting to write the program, we need to tell our programming language which codon corresponds to which amino acid.
 for that we would go to [standard genetic code page](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=tgencodes#SG1) and see the codon-amino acid pars. 
+
 **we _see_ this table but how can our programming language access it?**
 
 ![codon-amino acid](codon_to_amino_acid/1.png)
@@ -48,10 +49,10 @@ do whichever you feel most comfortable with for your first data preparations, bu
 
 - then type this on the first line and the latter to the second:
 
-```scss
+```regex
 (\w{3}) (\w) (\w{3})
 ```
-```scss
+```regex
 $1,$2
 ```
 
@@ -69,10 +70,10 @@ also, pay attention to the tiniest details, like how many spaces are where. they
 
 - now line them:
 
-```scss
+```regex
 (\w{3}),(\w)
 ```
-```scss
+```regex
 $1,$2\n
 ```
 ![codon amino acid](https://github.com/user-attachments/assets/c572c5a2-9b40-4e01-a762-f3e5853e9ddf)
@@ -80,10 +81,10 @@ $1,$2\n
 
 - use `^` followed by six spaces, and leave replace empty:
 
-```scss
+```regex
 ^
 ```
-```scss
+```regex
 
 ```
 
@@ -97,10 +98,10 @@ $1,$2\n
 
 - delete the space between the lines (replace by nothing):
 
-```scss
+```regex
 ^\s*$\n
 ```
-```scss
+```regex
 
 ```
 
