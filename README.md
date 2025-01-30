@@ -20,4 +20,8 @@ the notes cover the following topics:
     ✅ handling BLAST and protein sequences
     ✅ troubleshooting common issues in WSL & Python libraries
 
-    
+
+# tools i use in this repository  
+
+i use WSL as my operating system, and my IDE is VS Code.  
+you can access wsl remotely inside vs code. this setup has worked perfectly for me, but you can use the tools you feel most comfortable with.
