@@ -7,6 +7,8 @@ these notes are meant to:
 - help me review my notes and track my progress.
 - serve as a resource for others learning python for biological data analysis.
 
+it can be most beneficial to you if you are already familiar with python syntax. however, if you're not, it can still serve as a good introduction to the types of bioinformatics questions that can be addressed using python.
+
 the notes cover the following topics:
 
     ✅ text manipulation
