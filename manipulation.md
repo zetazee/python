@@ -35,7 +35,7 @@ let's start.
   print(ratio * 100)
 ```
 
-2.** write a program that will print the complement of this sequence.**
+2. ** write a program that will print the complement of this sequence.**
 
 `dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'`
 
