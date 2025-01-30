@@ -21,7 +21,7 @@ let's start.
 </details>  
 <details>
   <summary>do.</summary>
-  
+
   ```python
   dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
 
