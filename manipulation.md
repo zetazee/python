@@ -83,11 +83,47 @@ string = ''
 print(string.join(complementary_dna))
 ```
 
+3. **the motif G*AATTC is the recognition site for the EcoRI restriction enzyme.**
 
+- **PART 1: write a program which will calculate the size of the two fragments that will be produced when the dna seq is digested with EcoRI.**
+  
+`dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT`
 
+<details>
+  <summary>think.</summary>
+  <ul>
+    <li>go through the string and change a to t and save the new string in a variabe. > this won't work becasue will be rewritten every time.</li>
+    <li>it should do it in one go. start from the beginning, change a to t and t to a, g to c and c to g.</li>
+    <li>or you can avoid re-write by storing altered character in a new string and adding up to it.</li>
+  </ul>
+</details>
 
+do.
 
+```python
+dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
 
+cut_index = dna3_seq.find('GAATTC')
+
+# find will find the exact substring & will return the index of the first occurance.
+# this is also the cut index.
+
+print(cut_index)
+
+fragment_1 = dna3_seq[:22]
+fragment_2 = dna3_seq[22:]
+
+print(fragment_1)
+print(len(fragment_1))
+print(fragment_2)
+print(len(fragment_2))
+```
+
+- **PART 2: calculate what part of the dna is coding.**
+
+```python
+
+```
 
 
 
