@@ -29,8 +29,7 @@ you can click on it and find your way through home, username, and the `.csv` fil
 ![wsl](https://github.com/user-attachments/assets/2a397c63-4255-4426-bd64-63a44951dc30)
 
 
-
-
+you can do the same in reverse as well, sending files from windows to your wsl.
 
 
 
