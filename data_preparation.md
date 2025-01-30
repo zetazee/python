@@ -67,7 +67,7 @@ also, pay attention to the tiniest details, like how many spaces are where. they
 
 ![codon amino acid](https://github.com/user-attachments/assets/d5a7d0e1-1507-46e4-aa1c-5370fab33c5a)
 
-- now line them in one row:
+- now line them:
 
 ```scss
 (\w{3}),(\w)
@@ -78,7 +78,7 @@ $1,$2\n
 ![codon amino acid](https://github.com/user-attachments/assets/c572c5a2-9b40-4e01-a762-f3e5853e9ddf)
 
 
-- use `^` followed by six spaces, and for leave replace empty:
+- use `^` followed by six spaces, and leave replace empty:
 
 ```scss
 ^
@@ -107,9 +107,9 @@ $1,$2\n
 ![codon amino acid](https://github.com/user-attachments/assets/c01cf38b-c201-4206-b662-721ce1da0367)
 
 
+save your file (ctrl + S) and enjoy working with it.
 
-
-
+and the answer to our introductory question will be discussed on the dictionaries page.
 
 
 
