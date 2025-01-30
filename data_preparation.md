@@ -20,13 +20,15 @@ i use VS Code as my code editor and i access wsl remotely inside it.
 
 so let's use the codon - amino acid pair for creating the table.
 
-1. copy data
+**1. copy data
+**
 we copy from the website and paste it into a file with `.csv` extension in VS Code.
 (you need to create a new file and call it something like `data_preparation.csv` to get a file in csv format.)
 
 ![codon amino acid](https://github.com/user-attachments/assets/3572afc1-9ba9-431d-84bf-0ad9df224a03)
 
-2. clean the data
+**2. clean the data
+**
 we actually don't need all the information here. just the pairs would be enough for us.  
 i would like to keep the single-letter amino acid codes and codons and clean everything else.
 
