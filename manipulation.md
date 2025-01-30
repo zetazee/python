@@ -19,8 +19,8 @@ let's start.
     <li>divide to the whole length.</li>
   </ul>
 </details>  
-<details>
-  <summary>do.</summary>
+
+  do.
 
   ```python
   dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
@@ -34,9 +34,19 @@ let's start.
 
   print(ratio * 100)
 ```
-</details>
 
+2.** write a program that will print the complement of this sequence. **
+`dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'`
 
+<details>
+  <summary>think.</summary>
+  <ul>
+    <li>count how many times G appears.</li>
+    <li>count how many times C appears.</li>
+    <li>sum them up.</li>
+    <li>divide to the whole length.</li>
+  </ul>
+</details> 
 
 
 
