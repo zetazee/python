@@ -35,18 +35,52 @@ let's start.
   print(ratio * 100)
 ```
 
-2.** write a program that will print the complement of this sequence. **
+2.** write a program that will print the complement of this sequence.**
+
 `dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'`
 
 <details>
   <summary>think.</summary>
   <ul>
-    <li>count how many times G appears.</li>
-    <li>count how many times C appears.</li>
-    <li>sum them up.</li>
-    <li>divide to the whole length.</li>
+    <li>go through the string and change a to t and save the new string in a variabe. > this won't work becasue will be rewritten every time.</li>
+    <li>it should do it in one go. start from the beginning, change a to t and t to a, g to c and c to g.</li>
   </ul>
 </details> 
+
+do.
+
+```python
+replace_A = dna2_seq.replace('A', 't')
+replace_T = replace_A.replace('T', 'a')
+replace_G = replace_T.replace('G', 'c')
+replace_C = replace_G.replace('C', 'g')
+
+print(replace_C.upper())
+```
+
+improve.
+
+```python
+dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
+
+equivalence_dict = {
+    'A':'T',
+    'T':'A',
+    'C':'G',
+    'G':'C',
+}
+
+complementary_dna = []
+
+for base in dna2_seq:
+    replace = equivalence_dict[base]
+    # now prevent re-write by writing every replaced character to a new string
+    complementary_dna.append(replace)
+
+string = ''
+
+print(string.join(complementary_dna))
+```
 
 
 
