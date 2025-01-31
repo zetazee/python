@@ -101,9 +101,9 @@ let's start.
 <details>
   <summary>think.</summary>
   <ul>
-    <li>go through the string and change a to t and save the new string in a variabe. > this won't work becasue will be rewritten every time.</li>
-    <li>it should do it in one go. start from the beginning, change a to t and t to a, g to c and c to g.</li>
-    <li>or you can avoid re-write by storing altered character in a new string and adding up to it.</li>
+    <li>find motif position(index).</li>
+    <li>simulate the cut.</li>
+    <li>calculate len of right and left</li>
   </ul>
 </details>
 
