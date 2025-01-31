@@ -95,6 +95,7 @@ let's start.
 
 </details>
 
+----
 3. **the motif G*AATTC is the recognition site for the EcoRI restriction enzyme.**
 
 - **PART 1: write a program which will calculate the size of the two fragments that will be produced when the dna seq is digested with EcoRI.**
@@ -163,7 +164,8 @@ let's start.
 
 </details>
 
-- **calculate what part of _Prosthecobacter fusiformis_ dna is coding.**
+----
+- 4.**calculate what part of _Prosthecobacter fusiformis_ dna is coding.**
 `dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"`
 
 > here we don't need to think about the motif. just find regions between start and end codons.
