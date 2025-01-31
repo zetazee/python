@@ -40,6 +40,7 @@ let's start.
 
 </details>
 
+----
 2. **write a program that will print the complement of this sequence.**
 
 `dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'`
