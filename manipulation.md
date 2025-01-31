@@ -48,16 +48,19 @@ let's start.
   </ul>
 </details> 
 
-do.
+<details>
+  <summary>do.</summary>
 
-```python
-replace_A = dna2_seq.replace('A', 't')
-replace_T = replace_A.replace('T', 'a')
-replace_G = replace_T.replace('G', 'c')
-replace_C = replace_G.replace('C', 'g')
+  <pre><code>
+  replace_A = dna2_seq.replace('A', 't')
+  replace_T = replace_A.replace('T', 'a')
+  replace_G = replace_T.replace('G', 'c')
+  replace_C = replace_G.replace('C', 'g')
 
-print(replace_C.upper())
-```
+  print(replace_C.upper())
+  </code></pre>
+
+</details>
 
 improve.
 
