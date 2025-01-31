@@ -20,9 +20,10 @@ let's start.
   </ul>
 </details>  
 
-  do.
+<details>
+  <summary>do.</summary>
 
-  ```python
+  <pre><code>
   dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
 
   G_content = dna_seq.count('G')
@@ -33,7 +34,9 @@ let's start.
   ratio = content_GC / len(dna_seq)
 
   print(ratio * 100)
-```
+  </code></pre>
+
+</details>
 
 2. **write a program that will print the complement of this sequence.**
 
@@ -62,29 +65,32 @@ let's start.
 
 </details>
 
-improve.
+<details>
+  <summary>improve.</summary>
 
-```python
-dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
+  <pre><code>
+  dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
 
-equivalence_dict = {
-    'A':'T',
-    'T':'A',
-    'C':'G',
-    'G':'C',
-}
+  equivalence_dict = {
+      'A':'T',
+      'T':'A',
+      'C':'G',
+      'G':'C',
+  }
 
-complementary_dna = []
+  complementary_dna = []
 
-for base in dna2_seq:
-    replace = equivalence_dict[base]
-    # now prevent re-write by writing every replaced character to a new string.
-    complementary_dna.append(replace)
+  for base in dna2_seq:
+      replace = equivalence_dict[base]
+      # now prevent re-write by writing every replaced character to a new string.
+      complementary_dna.append(replace)
 
-string = ''
+  string = ''
 
-print(string.join(complementary_dna))
-```
+  print(string.join(complementary_dna))
+  </code></pre>
+
+</details>
 
 3. **the motif G*AATTC is the recognition site for the EcoRI restriction enzyme.**
 
@@ -101,26 +107,29 @@ print(string.join(complementary_dna))
   </ul>
 </details>
 
-do.
+<details>
+  <summary>do.</summary>
 
-```python
-dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
+  <pre><code>
+  dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
 
-cut_index = dna3_seq.find('GAATTC')
+  cut_index = dna3_seq.find('GAATTC')
 
-# find will find the exact substring & will return the index of the first occurance.
-# this is also the cut index.
+  # find will find the exact substring & will return the index of the first occurance.
+  # this is also the cut index.
 
-print(cut_index)
+  print(cut_index)
 
-fragment_1 = dna3_seq[:22]
-fragment_2 = dna3_seq[22:]
+  fragment_1 = dna3_seq[:22]
+  fragment_2 = dna3_seq[22:]
 
-print(fragment_1)
-print(len(fragment_1))
-print(fragment_2)
-print(len(fragment_2))
-```
+  print(fragment_1)
+  print(len(fragment_1))
+  print(fragment_2)
+  print(len(fragment_2))
+  </code></pre>
+
+</details>
 
 - **PART 2: calculate what part of the dna is coding.**
 
