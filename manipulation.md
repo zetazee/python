@@ -162,6 +162,12 @@ let's start.
 
 </details>
 
+- **calculate what part of _Prosthecobacter fusiformis_ dna is coding.**
+`dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"`
+
+> here we don't need to think about the motif. just find regions between start and end codons.
+
+
 
 
 
