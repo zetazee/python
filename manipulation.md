@@ -2,7 +2,9 @@
 
 text manipulation in python means making changes to a text. this text can be any type of string; in our case, we are working with dna strings.
 
-i will propose the question, then you think about the steps you need to take to solve the puzzle. once you have a plan, you can untoggle the answers.
+i will propose the question, then you take the time to understand what you are being asked and then think about the steps you need to take to solve the puzzle. once you have a plan, you can untoggle the answers. 
+
+give yourself time limit on the `do.` part. you are learning how to use this tool and to do that you need to see a variety of solutions other people have come up with before finding your own way. train your brain with as much as question-answers you can. i didn't do this when i started and now i think i should have spent less time thinking deeply about this small set of questions and more time spreading my sources widely. it's okay, i did that and now i know this. next time different approach.
 
 let's start.
 
@@ -132,10 +134,14 @@ let's start.
 </details>
 
 - **PART 2: calculate what part of the dna is coding.**
+> here we will assume that any part in uppercase is coding. (you don't need to find start and stop codons for now.)
 
-```python
-
-```
+<details>
+  <summary>think.</summary>
+  <ul>
+    <li>we have two fragments after the cut. all uppercase.</li>
+  </ul>
+</details>
 
 
 
