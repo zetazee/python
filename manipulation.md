@@ -143,7 +143,24 @@ let's start.
   </ul>
 </details>
 
+<details>
+  <summary>do.</summary>
 
+  <pre><code>
+    ```python
+    dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
+    
+    cut = dna3_seq.find('GAATTC')
+    
+    frag_1 = dna3_seq[:cut+1]
+    frag_2 = dna3_seq[cut+1:]
+    
+    print(len(frag_1))
+    print(len(frag_2))
+    ```python
+  </code></pre>
+
+</details>
 
 
 
