@@ -157,7 +157,7 @@ let's start.
     
     print(len(frag_1))
     print(len(frag_2))
-    ```python
+    ```
   </code></pre>
 
 </details>
