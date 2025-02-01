@@ -205,7 +205,43 @@ let's start.
 
 > find regions between start and end codons.
 
+<details>
+  <summary>think.</summary>
+  <ul>
+    <li>go through the dna, read in three base format, find start codon and then stop codon, print it,</li>
+    <li>before that, what is codon? DEFINE `codon` for the program.</li>
+    <li>move to the next start codon and end codon, print the index and fragment it.</li>
+  </ul>
+</details>
 
+<details>
+  <summary>do.</summary>
+
+  <pre><code>
+    dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"
+  
+  start = 'ATG'
+  end = ['TAG','TGA','TAA']
+  
+  for index in range(0,len(dna_pf_seq),3):
+      codon = dna_pf_seq[index:index+3]
+      if codon == start:
+          print(f'there is a start codon in {index} position')
+  
+  
+  for index in range(0,len(dna_pf_seq),3):
+      codon = dna_pf_seq[index:index+3]
+      for item in end:
+          if codon == item:
+              print(f'there is a stop codon in {index}')
+  
+  print(dna_pf_seq[0:90])
+  # there is no tRNA for stop codons so we should actually print zero to 86 (which we need to +1 for the end of slicing).
+  print(dna_pf_seq[0:87])
+
+  </code></pre>
+
+</details>
 
 
 
