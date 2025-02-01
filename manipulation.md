@@ -187,7 +187,7 @@ for index in range(0, len(dna_pf_seq), 3):
 
 ---
 
-**FIVE: calculate what part of this _Prosthecobacter fusiformis_ dna sequence is coding.**
+**FIVE: calculate what part of this _Prosthecobacter fusiformis_ dna sequence is coding.** ✅
 
 `dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"`
 
