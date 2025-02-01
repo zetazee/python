@@ -38,6 +38,8 @@ print(ratio * 100)
 
 </details>
 
+---
+
 2. **write a program that will print the complement of this sequence.**
 
 `dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'`
@@ -87,6 +89,8 @@ string = ''
 print(string.join(complementary_dna))
   </code></pre>
 </details>
+
+---
 
 3. **the motif G*AATTC is the recognition site for the EcoRI restriction enzyme.**
 
@@ -149,6 +153,8 @@ print(len(frag_2))
   </code></pre>
 </details>
 
+---
+
 4. **print this sequence as a list of codons.**
 
 `dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"`
@@ -178,6 +184,8 @@ for index in range(0, len(dna_pf_seq), 3):
         print(codon)
   </code></pre>
 </details>
+
+---
 
 5. **calculate what part of this _Prosthecobacter fusiformis_ dna sequence is coding.**
 
@@ -218,7 +226,7 @@ print(dna_pf_seq[0:87])
   </code></pre>
 </details>
 
-
+---
 
 
 
