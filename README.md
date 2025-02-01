@@ -10,17 +10,26 @@ these notes are meant to:
 it can be most beneficial to you if you are already familiar with python syntax. however, if you're not, it can still serve as a good introduction to the types of bioinformatics questions that can be addressed using python.
 
 the notes cover the following topics:
-
-✅ [text manipulation](https://zeeamini.com/manipulation.html)
-✅ reading files
-✅ lists & loops
-✅ functions
-✅ conditional tests
-✅ regular expressions & exercises
-✅ dictionaries
-✅ files, programs, and user input
-✅ handling BLAST and protein sequences
-✅ troubleshooting common issues in WSL & Python libraries
+  
+  ✅[text manipulation](https://zeeamini.com/manipulation.html)
+  
+  ✅ reading files
+  
+  ✅ lists & loops
+  
+  ✅ functions
+  
+  ✅ conditional tests
+  
+  ✅ regular expressions & exercises
+  
+  ✅ dictionaries
+  
+  ✅ files, programs, and user input
+  
+  ✅ handling BLAST and protein sequences
+  
+  ✅ troubleshooting common issues in WSL & Python libraries
 
 
 # tools i use in this repository  
