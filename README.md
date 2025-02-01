@@ -11,7 +11,7 @@ it can be most beneficial to you if you are already familiar with python syntax.
 
 the notes cover the following topics:
 
-    ✅ text manipulation
+    ✅ [text manipulation](https://zeeamini.com/manipulation.html)
     ✅ reading files
     ✅ lists & loops
     ✅ functions
