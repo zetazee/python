@@ -10,7 +10,7 @@ let's start.
 
 1.  **write a program that will print GC content of this sequence.**
 
-`dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'`
+dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
 
 <details>
   <summary>think.</summary>
@@ -20,20 +20,20 @@ let's start.
     <li>sum them up.</li>
     <li>divide to the whole length.</li>
   </ul>
-</details>  
+</details>
 
 <details>
-  
   <summary>do.</summary>
+
   <pre><code>
-    dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
-    G_content = dna_seq.count('G')
-    C_content = dna_seq.count('C')
-    content_GC = G_content + C_content
-    ratio = content_GC / len(dna_seq)
-    print(ratio * 100)
+dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
+G_content = dna_seq.count('G')
+C_content = dna_seq.count('C')
+content_GC = G_content + C_content
+ratio = content_GC / len(dna_seq)
+print(ratio * 100)
   </code></pre>
-  
+
 </details>
 
 ----
