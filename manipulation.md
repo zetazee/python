@@ -8,7 +8,7 @@ give yourself time limit on the `do.` part. you are learning how to use this too
 
 let's start.
 
-1.  **write a program that will print GC content of this sequence.**
+1. **write a program that will print GC content of this sequence.**
 
 dna_seq = `ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT`
 
@@ -29,7 +29,9 @@ dna_seq = `ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT`
 dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
 G_content = dna_seq.count('G')
 C_content = dna_seq.count('C')
+    
 content_GC = G_content + C_content
+
 ratio = content_GC / len(dna_seq)
 print(ratio * 100)
   </code></pre>
