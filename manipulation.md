@@ -23,6 +23,7 @@ let's start.
 </details>  
 
 <details>
+  
   <summary>do.</summary>
   <pre><code>
   dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
@@ -54,6 +55,7 @@ let's start.
 </details> 
 
 <details>
+  
   <summary>do.</summary>
   <pre><code>
   replace_A = dna2_seq.replace('A', 't')
@@ -67,6 +69,7 @@ let's start.
 </details>
 
 <details>
+  
   <summary>improve.</summary>
   <pre><code>
   dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
@@ -143,6 +146,7 @@ let's start.
 </details>
 
 <details>
+  
   <summary>do.</summary>
   <pre><code>
     dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
@@ -163,6 +167,7 @@ let's start.
 `dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"`
 
 <details>
+  
   <summary>think.</summary>
   <ul>
     <li>go through the sequence and read it by three characters.</li>
@@ -171,6 +176,7 @@ let's start.
 </details>
 
 <details>
+  
   <summary>do.</summary>
   <pre><code>
     for index in range(0,len(dna_pf_seq),3):
@@ -181,6 +187,7 @@ let's start.
 </details>
 
 <details>
+  
   <summary>improve.</summary>
   <pre><code>
     for index in range(0,len(dna_pf_seq),3):
