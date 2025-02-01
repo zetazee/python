@@ -36,6 +36,7 @@ let's start.
 
   print(ratio * 100)
   </code></pre>
+  
 </details>
 
 ----
@@ -62,6 +63,7 @@ let's start.
 
   print(replace_C.upper())
   </code></pre>
+  
 </details>
 
 <details>
@@ -87,6 +89,7 @@ let's start.
 
   print(string.join(complementary_dna))
   </code></pre>
+  
 </details>
 
 ----
@@ -103,6 +106,7 @@ let's start.
     <li>simulate the cut.</li>
     <li>calculate len of right and left</li>
   </ul>
+  
 </details>
 
 <details>
@@ -125,6 +129,7 @@ let's start.
     print(fragment_2)
     print(len(fragment_2))
   </code></pre>
+  
 </details>
 
 - **PART 2: calculate what part of the dna is coding.**
