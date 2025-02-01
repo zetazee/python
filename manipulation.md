@@ -38,7 +38,6 @@ print(ratio * 100)
 
 </details>
 
-----
 2. **write a program that will print the complement of this sequence.**
 
 `dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'`
@@ -89,7 +88,6 @@ print(string.join(complementary_dna))
   </code></pre>
 </details>
 
-----
 3. **the motif G*AATTC is the recognition site for the EcoRI restriction enzyme.**
 
 - **PART 1: write a program which will calculate the size of the two fragments that will be produced when the dna seq is digested with EcoRI.**
@@ -103,26 +101,27 @@ print(string.join(complementary_dna))
     <li>simulate the cut.</li>
     <li>calculate len of right and left</li>
   </ul>
-  
 </details>
 
 <details>
-  
   <summary>do.</summary>
-  <pre><code>
-    dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
-    cut_index = dna3_seq.find('GAATTC')
-    # find will find the exact substring & will return the index of the first occurance.
-    # this is also the cut index.
-    print(cut_index)
-    fragment_1 = dna3_seq[:22]
-    fragment_2 = dna3_seq[22:]
-    print(fragment_1)
-    print(len(fragment_1))
-    print(fragment_2)
-    print(len(fragment_2))
+  <pre><code class="language-python">
+dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
+    
+cut_index = dna3_seq.find('GAATTC')
+
+# find will find the exact substring & will return the index of the first occurrence.
+# this is also the cut index.
+print(cut_index)
+
+fragment_1 = dna3_seq[:22]
+fragment_2 = dna3_seq[22:]
+
+print(fragment_1)
+print(len(fragment_1))
+print(fragment_2)
+print(len(fragment_2))
   </code></pre>
-  
 </details>
 
 - **PART 2: calculate what part of the dna is coding.**
@@ -136,57 +135,50 @@ print(string.join(complementary_dna))
 </details>
 
 <details>
-  
   <summary>do.</summary>
-  <pre><code>
-    dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
-    cut = dna3_seq.find('GAATTC')
-    frag_1 = dna3_seq[:cut+1]
-    frag_2 = dna3_seq[cut+1:]
-    print(len(frag_1))
-    print(len(frag_2))
+  <pre><code class="language-python">
+dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
+    
+cut = dna3_seq.find('GAATTC')
+
+frag_1 = dna3_seq[:cut+1]
+frag_2 = dna3_seq[cut+1:]
+
+print(len(frag_1))
+print(len(frag_2))
   </code></pre>
-  
 </details>
 
-----
 4. **print this sequence as a list of codons.**
 
 `dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"`
 
 <details>
-  
   <summary>think.</summary>
   <ul>
     <li>go through the sequence and read it by three characters.</li>
   </ul>
-  
 </details>
 
 <details>
-  
   <summary>do.</summary>
-  <pre><code>
-    for index in range(0,len(dna_pf_seq),3):
+  <pre><code class="language-python">
+for index in range(0, len(dna_pf_seq), 3):
     codon = dna_pf_seq[index:index+3]
     print(codon)
   </code></pre>
-  
 </details>
 
 <details>
-  
   <summary>improve.</summary>
-  <pre><code>
-    for index in range(0,len(dna_pf_seq),3):
+  <pre><code class="language-python">
+for index in range(0, len(dna_pf_seq), 3):
     codon = dna_pf_seq[index:index+3]
     if len(codon) == 3:
         print(codon)
   </code></pre>
-  
 </details>
 
-----
 5. **calculate what part of this _Prosthecobacter fusiformis_ dna sequence is coding.**
 
 `dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"`
@@ -204,27 +196,27 @@ print(string.join(complementary_dna))
 
 <details>
   <summary>do.</summary>
-
-  <pre><code>
-    dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"
-    start = 'ATG'
-    end = ['TAG','TGA','TAA']
-    for index in range(0,len(dna_pf_seq),3):
-        codon = dna_pf_seq[index:index+3]
-        if codon == start:
-            print(f'there is a start codon in {index} position')
-    for index in range(0,len(dna_pf_seq),3):
-        codon = dna_pf_seq[index:index+3]
-        for item in end:
-            if codon == item:
-                print(f'there is a stop codon in {index}')
-    print(dna_pf_seq[0:90])
-    # there is no tRNA for stop codons so we should actually print zero to 86 (which we need to +1 for the end of slicing).
-    print(dna_pf_seq[0:87])
+  <pre><code class="language-python">
+dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"
+start = 'ATG'
+end = ['TAG','TGA','TAA']
+    
+for index in range(0, len(dna_pf_seq), 3):
+    codon = dna_pf_seq[index:index+3]
+    if codon == start:
+        print(f'there is a start codon in {index} position')
+        
+for index in range(0, len(dna_pf_seq), 3):
+    codon = dna_pf_seq[index:index+3]
+    for item in end:
+        if codon == item:
+            print(f'there is a stop codon in {index}')
+            
+print(dna_pf_seq[0:90])
+# there is no tRNA for stop codons so we should actually print zero to 86 (which we need to +1 for the end of slicing).
+print(dna_pf_seq[0:87])
   </code></pre>
-
 </details>
-
 
 
 
