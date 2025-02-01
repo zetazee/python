@@ -149,7 +149,6 @@ let's start.
   <summary>do.</summary>
 
   <pre><code>
-    ```python
     dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
     
     cut = dna3_seq.find('GAATTC')
@@ -159,13 +158,13 @@ let's start.
     
     print(len(frag_1))
     print(len(frag_2))
-    ```
   </code></pre>
 
 </details>
 
 ----
-- 4.**calculate what part of _Prosthecobacter fusiformis_ dna is coding.**
+4.**calculate what part of _Prosthecobacter fusiformis_ dna is coding.**
+
 `dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"`
 
 > here we don't need to think about the motif. just find regions between start and end codons.
