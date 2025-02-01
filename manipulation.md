@@ -149,6 +149,7 @@ let's start.
     print(len(frag_1))
     print(len(frag_2))
   </code></pre>
+  
 </details>
 
 ----
@@ -161,6 +162,7 @@ let's start.
   <ul>
     <li>go through the sequence and read it by three characters.</li>
   </ul>
+  
 </details>
 
 <details>
@@ -170,6 +172,7 @@ let's start.
     codon = dna_pf_seq[index:index+3]
     print(codon)
   </code></pre>
+  
 </details>
 
 <details>
@@ -180,10 +183,8 @@ let's start.
     if len(codon) == 3:
         print(codon)
   </code></pre>
+  
 </details>
-
-
-
 
 ----
 5. **calculate what part of _Prosthecobacter fusiformis_ dna is coding.**
