@@ -10,7 +10,7 @@ let's start.
 
 1.  **write a program that will print GC content of this sequence.**
 
-dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
+dna_seq = `ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT`
 
 <details>
   <summary>think.</summary>
@@ -25,7 +25,7 @@ dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
 <details>
   <summary>do.</summary>
 
-  <pre><code>
+  <pre><code class="language-python">
 dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
 G_content = dna_seq.count('G')
 C_content = dna_seq.count('C')
