@@ -26,16 +26,12 @@ let's start.
   
   <summary>do.</summary>
   <pre><code>
-  dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
-
-  G_content = dna_seq.count('G')
-  C_content = dna_seq.count('C')
-
-  content_GC = G_content + C_content
-
-  ratio = content_GC / len(dna_seq)
-
-  print(ratio * 100)
+    dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
+    G_content = dna_seq.count('G')
+    C_content = dna_seq.count('C')
+    content_GC = G_content + C_content
+    ratio = content_GC / len(dna_seq)
+    print(ratio * 100)
   </code></pre>
   
 </details>
@@ -58,12 +54,11 @@ let's start.
   
   <summary>do.</summary>
   <pre><code>
-  replace_A = dna2_seq.replace('A', 't')
-  replace_T = replace_A.replace('T', 'a')
-  replace_G = replace_T.replace('G', 'c')
-  replace_C = replace_G.replace('C', 'g')
-
-  print(replace_C.upper())
+    replace_A = dna2_seq.replace('A', 't')
+    replace_T = replace_A.replace('T', 'a')
+    replace_G = replace_T.replace('G', 'c')
+    replace_C = replace_G.replace('C', 'g')
+    print(replace_C.upper())
   </code></pre>
   
 </details>
@@ -72,25 +67,20 @@ let's start.
   
   <summary>improve.</summary>
   <pre><code>
-  dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
-
-  equivalence_dict = {
-      'A':'T',
-      'T':'A',
-      'C':'G',
-      'G':'C',
-  }
-
-  complementary_dna = []
-
-  for base in dna2_seq:
-      replace = equivalence_dict[base]
-      # now prevent re-write by writing every replaced character to a new string.
-      complementary_dna.append(replace)
-
-  string = ''
-
-  print(string.join(complementary_dna))
+    dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
+    equivalence_dict = {
+        'A':'T',
+        'T':'A',
+        'C':'G',
+        'G':'C',
+    }
+    complementary_dna = []
+    for base in dna2_seq:
+        replace = equivalence_dict[base]
+        # now prevent re-write by writing every replaced character to a new string.
+        complementary_dna.append(replace)
+    string = ''
+    print(string.join(complementary_dna))
   </code></pre>
   
 </details>
@@ -113,20 +103,16 @@ let's start.
 </details>
 
 <details>
+  
   <summary>do.</summary>
   <pre><code>
     dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
-    
     cut_index = dna3_seq.find('GAATTC')
-  
     # find will find the exact substring & will return the index of the first occurance.
     # this is also the cut index.
-  
     print(cut_index)
-  
     fragment_1 = dna3_seq[:22]
     fragment_2 = dna3_seq[22:]
-  
     print(fragment_1)
     print(len(fragment_1))
     print(fragment_2)
@@ -151,10 +137,8 @@ let's start.
   <pre><code>
     dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
     cut = dna3_seq.find('GAATTC')
-    
     frag_1 = dna3_seq[:cut+1]
     frag_2 = dna3_seq[cut+1:]
-    
     print(len(frag_1))
     print(len(frag_2))
   </code></pre>
@@ -199,7 +183,7 @@ let's start.
 </details>
 
 ----
-5. **calculate what part of _Prosthecobacter fusiformis_ dna is coding.**
+5. **calculate what part of this _Prosthecobacter fusiformis_ dna sequence is coding.**
 
 `dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"`
 
@@ -220,24 +204,24 @@ let's start.
   <pre><code>
     dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"
   
-  start = 'ATG'
-  end = ['TAG','TGA','TAA']
-  
-  for index in range(0,len(dna_pf_seq),3):
-      codon = dna_pf_seq[index:index+3]
-      if codon == start:
-          print(f'there is a start codon in {index} position')
-  
-  
-  for index in range(0,len(dna_pf_seq),3):
-      codon = dna_pf_seq[index:index+3]
-      for item in end:
-          if codon == item:
-              print(f'there is a stop codon in {index}')
-  
-  print(dna_pf_seq[0:90])
-  # there is no tRNA for stop codons so we should actually print zero to 86 (which we need to +1 for the end of slicing).
-  print(dna_pf_seq[0:87])
+    start = 'ATG'
+    end = ['TAG','TGA','TAA']
+    
+    for index in range(0,len(dna_pf_seq),3):
+        codon = dna_pf_seq[index:index+3]
+        if codon == start:
+            print(f'there is a start codon in {index} position')
+    
+    
+    for index in range(0,len(dna_pf_seq),3):
+        codon = dna_pf_seq[index:index+3]
+        for item in end:
+            if codon == item:
+                print(f'there is a stop codon in {index}')
+      
+    print(dna_pf_seq[0:90])
+    # there is no tRNA for stop codons so we should actually print zero to 86 (which we need to +1 for the end of slicing).
+    print(dna_pf_seq[0:87])
 
   </code></pre>
 
