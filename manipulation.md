@@ -46,45 +46,47 @@ print(ratio * 100)
 <details>
   <summary>think.</summary>
   <ul>
-    <li>go through the string and change a to t and save the new string in a variabe. > this won't work becasue will be rewritten every time.</li>
+    <li>go through the string and change a to t and save the new string in a variable. > this won't work because it will be rewritten every time.</li>
     <li>it should do it in one go. start from the beginning, change a to t and t to a, g to c and c to g.</li>
     <li>or you can avoid re-write by storing altered character in a new string and adding up to it.</li>
   </ul>
-</details> 
-
-<details>
-  
-  <summary>do.</summary>
-  <pre><code>
-    replace_A = dna2_seq.replace('A', 't')
-    replace_T = replace_A.replace('T', 'a')
-    replace_G = replace_T.replace('G', 'c')
-    replace_C = replace_G.replace('C', 'g')
-    print(replace_C.upper())
-  </code></pre>
-  
 </details>
 
 <details>
-  
-  <summary>improve.</summary>
-  <pre><code>
-    dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
-    equivalence_dict = {
-        'A':'T',
-        'T':'A',
-        'C':'G',
-        'G':'C',
-    }
-    complementary_dna = []
-    for base in dna2_seq:
-        replace = equivalence_dict[base]
-        # now prevent re-write by writing every replaced character to a new string.
-        complementary_dna.append(replace)
-    string = ''
-    print(string.join(complementary_dna))
+  <summary>do.</summary>
+
+  <pre><code class="language-python">
+replace_A = dna2_seq.replace('A', 't')
+replace_T = replace_A.replace('T', 'a')
+replace_G = replace_T.replace('G', 'c')
+replace_C = replace_G.replace('C', 'g')
+
+print(replace_C.upper())
   </code></pre>
-  
+
+</details>
+
+<details>
+  <summary>improve.</summary>
+  <pre><code class="language-python">
+dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
+equivalence_dict = {
+    'A':'T',
+    'T':'A',
+    'C':'G',
+    'G':'C',
+}
+    
+complementary_dna = []
+
+for base in dna2_seq:
+    replace = equivalence_dict[base]
+    # now prevent re-write by writing every replaced character to a new string.
+    complementary_dna.append(replace)
+    
+string = ''
+print(string.join(complementary_dna))
+  </code></pre>
 </details>
 
 ----
