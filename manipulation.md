@@ -219,6 +219,7 @@ for index in range(0, len(dna_pf_seq), 3):
     for item in end:
         if codon == item:
             print(f'there is a stop codon in {index}')
+#the second ATG is just methionone inside the protein. the first one is our start codon.
             
 print(dna_pf_seq[0:90])
 # there is no tRNA for stop codons so we should actually print zero to 86 (which we need to +1 for the end of slicing).
@@ -228,6 +229,7 @@ print(dna_pf_seq[0:87])
 
 ---
 
+6. 
 
 
 
