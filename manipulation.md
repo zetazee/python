@@ -229,8 +229,51 @@ print(dna_pf_seq[0:87])
 
 ---
 
-**SIX: **
+**SIX: there are two exons and one intron in this dna sequence. exon 1 is located from the first character to the sixty third character and exon 2 from ninety first to the end.**
 
+- **print coding regions.**
+- **write a program that will calculate what percentage of the dna is coding.**
+- **print the genomic dna sequence with coding bases in upper and non-coding bases in lowercase.**
+
+<details>
+  <summary>think.</summary>
+  <ul>
+    <li>i skipped thinking for this one because it is just getting the index right :D.</li>
+  </ul>
+</details>
+
+<details>
+  <summary>do.</summary>
+
+  <pre><code class="language-python">
+dna = 'ATCGATCGATCGATCGACTGACTAGTCATAGCTATGCATGTAGCTACTCGATCGATCGATCGATCGATCGATCGATCGATCGATCATGCTATCATCGATCGATATCGATGCATCGACTACTAT'
+
+# two exons, one intron
+
+# exon 1: first to the sixty third character
+# exon 2: 91 to the end
+
+#### write a program that will calculate what percentage of the dna is coding.
+#### print the genomic dna sequence with coding bases in upper and non-coding bases in lowercase.
+
+exon_1 = dna[0:63]
+exon_2 = dna[90:]
+
+#### print just the coding regions
+print(exon_1)
+print(exon_2)
+
+#### write a program that will calculate what percentage of the dna is coding.
+print((len(exon_1)+len(exon_2)) / len(dna) * 100)
+# don't forget to put paranthesis for the adding up to be prioritize to division and multipication.
+
+#### print the genomic dna sequence with coding bases in upper and non-coding bases in lowercase.
+intron = dna[63:91]
+
+print(exon_1.upper() + intron.lower() + exon_2.upper())
+  </code></pre>
+
+</details>
 
 
 
