@@ -265,7 +265,7 @@ print(exon_2)
 
 #### write a program that will calculate what percentage of the dna is coding.
 print((len(exon_1)+len(exon_2)) / len(dna) * 100)
-# don't forget to put paranthesis for the adding up to be prioritize to division and multipication.
+# don't forget to put paranthesis for the addition (prioritize to division and multipication).
 
 #### print the genomic dna sequence with coding bases in upper and non-coding bases in lowercase.
 intron = dna[63:91]
