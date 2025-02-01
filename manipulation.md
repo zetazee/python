@@ -24,7 +24,6 @@ let's start.
 
 <details>
   <summary>do.</summary>
-
   <pre><code>
   dna_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
 
@@ -37,7 +36,6 @@ let's start.
 
   print(ratio * 100)
   </code></pre>
-
 </details>
 
 ----
@@ -56,7 +54,6 @@ let's start.
 
 <details>
   <summary>do.</summary>
-
   <pre><code>
   replace_A = dna2_seq.replace('A', 't')
   replace_T = replace_A.replace('T', 'a')
@@ -65,12 +62,10 @@ let's start.
 
   print(replace_C.upper())
   </code></pre>
-
 </details>
 
 <details>
   <summary>improve.</summary>
-
   <pre><code>
   dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'
 
@@ -92,7 +87,6 @@ let's start.
 
   print(string.join(complementary_dna))
   </code></pre>
-
 </details>
 
 ----
@@ -113,26 +107,24 @@ let's start.
 
 <details>
   <summary>do.</summary>
-
   <pre><code>
-  dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
-
-  cut_index = dna3_seq.find('GAATTC')
-
-  # find will find the exact substring & will return the index of the first occurance.
-  # this is also the cut index.
-
-  print(cut_index)
-
-  fragment_1 = dna3_seq[:22]
-  fragment_2 = dna3_seq[22:]
-
-  print(fragment_1)
-  print(len(fragment_1))
-  print(fragment_2)
-  print(len(fragment_2))
+    dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
+    
+    cut_index = dna3_seq.find('GAATTC')
+  
+    # find will find the exact substring & will return the index of the first occurance.
+    # this is also the cut index.
+  
+    print(cut_index)
+  
+    fragment_1 = dna3_seq[:22]
+    fragment_2 = dna3_seq[22:]
+  
+    print(fragment_1)
+    print(len(fragment_1))
+    print(fragment_2)
+    print(len(fragment_2))
   </code></pre>
-
 </details>
 
 - **PART 2: calculate what part of the dna is coding.**
@@ -147,10 +139,8 @@ let's start.
 
 <details>
   <summary>do.</summary>
-
   <pre><code>
     dna3_seq = 'ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT'
-    
     cut = dna3_seq.find('GAATTC')
     
     frag_1 = dna3_seq[:cut+1]
@@ -159,15 +149,48 @@ let's start.
     print(len(frag_1))
     print(len(frag_2))
   </code></pre>
-
 </details>
 
 ----
-4.**calculate what part of _Prosthecobacter fusiformis_ dna is coding.**
+4. **print this sequence as a list of codons.**
 
 `dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"`
 
-> here we don't need to think about the motif. just find regions between start and end codons.
+<details>
+  <summary>think.</summary>
+  <ul>
+    <li>go through the sequence and read it by three characters.</li>
+  </ul>
+</details>
+
+<details>
+  <summary>do.</summary>
+  <pre><code>
+    for index in range(0,len(dna_pf_seq),3):
+    codon = dna_pf_seq[index:index+3]
+    print(codon)
+  </code></pre>
+</details>
+
+<details>
+  <summary>improve.</summary>
+  <pre><code>
+    for index in range(0,len(dna_pf_seq),3):
+    codon = dna_pf_seq[index:index+3]
+    if len(codon) == 3:
+        print(codon)
+  </code></pre>
+</details>
+
+
+
+
+----
+5. **calculate what part of _Prosthecobacter fusiformis_ dna is coding.**
+
+`dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"`
+
+> find regions between start and end codons.
 
 
 
