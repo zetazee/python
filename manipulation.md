@@ -8,7 +8,7 @@ give yourself time limit on the `do.` part. you are learning how to use this too
 
 let's start.
 
-1. **write a program that will print GC content of this sequence.**
+**ONE: write a program that will print GC content of this sequence.**
 
 dna_seq = `ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT`
 
@@ -40,7 +40,7 @@ print(ratio * 100)
 
 ---
 
-2. **write a program that will print the complement of this sequence.**
+**TWO: write a program that will print the complement of this sequence.**
 
 `dna2_seq = 'ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT'`
 
@@ -92,7 +92,7 @@ print(string.join(complementary_dna))
 
 ---
 
-3. **the motif G*AATTC is the recognition site for the EcoRI restriction enzyme.**
+**THREE: the motif G*AATTC is the recognition site for the EcoRI restriction enzyme.**
 
 - **PART 1: write a program which will calculate the size of the two fragments that will be produced when the dna seq is digested with EcoRI.**
   
@@ -155,7 +155,7 @@ print(len(frag_2))
 
 ---
 
-4. **print this sequence as a list of codons.**
+**FOUR: print this sequence as a list of codons.**
 
 `dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"`
 
@@ -187,7 +187,7 @@ for index in range(0, len(dna_pf_seq), 3):
 
 ---
 
-5. **calculate what part of this _Prosthecobacter fusiformis_ dna sequence is coding.**
+**FIVE: calculate what part of this _Prosthecobacter fusiformis_ dna sequence is coding.**
 
 `dna_pf_seq = "ATGACCATCGAAAAGGTCGTTCGTGTTCTGCTTCTGATGGTGCTGGGCGCTGGCCGTACCGTTCGCCGATCTGCTGGTCTTCGTTGCTGAACAGCCTGGCCGCTGGCTTTGAGCTGTTCATGGTGATGACCTGAACGTTCGCTGCTGCTGGCTACTGCTGCTGATGTGCTGAATAA"`
 
@@ -229,7 +229,7 @@ print(dna_pf_seq[0:87])
 
 ---
 
-6. 
+**SIX: **
 
 
 
