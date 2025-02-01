@@ -11,16 +11,16 @@ it can be most beneficial to you if you are already familiar with python syntax.
 
 the notes cover the following topics:
 
-    ✅ ![text manipulation](https://zeeamini.com/manipulation.html)
-    ✅ reading files
-    ✅ lists & loops
-    ✅ functions
-    ✅ conditional tests
-    ✅ regular expressions & exercises
-    ✅ dictionaries
-    ✅ files, programs, and user input
-    ✅ handling BLAST and protein sequences
-    ✅ troubleshooting common issues in WSL & Python libraries
+✅ [text manipulation](https://zeeamini.com/manipulation.html)
+✅ reading files
+✅ lists & loops
+✅ functions
+✅ conditional tests
+✅ regular expressions & exercises
+✅ dictionaries
+✅ files, programs, and user input
+✅ handling BLAST and protein sequences
+✅ troubleshooting common issues in WSL & Python libraries
 
 
 # tools i use in this repository  
