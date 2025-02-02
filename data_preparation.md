@@ -7,7 +7,6 @@ for that we would go to [standard genetic code page](https://www.ncbi.nlm.nih.go
 
 **we _see_ this table but how can our programming language access it?**
 
-![codon-amino acid](codon_to_amino_acid/1.png)
 
 data preparation here means that you make these types of information readable files for your programming language.
 for example, this data in html on a website needs to be converted into a `.csv` (comma-separated) or `.xlsx` (excel) file to make it accessible and compatible for your program.
